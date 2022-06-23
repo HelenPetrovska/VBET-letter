@@ -1,0 +1,57 @@
+.bonuses {
+  padding-top: 80px;
+  padding-bottom: 90px;
+
+  &__text {
+    @extend %text;
+    margin-bottom: 70px;
+  }
+
+  &__title {
+    @extend %h2;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    margin-bottom: 70px;
+    list-style-type: none;
+
+    @include onTablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include onDesktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 23px;
+    line-height: 135%;
+  }
+
+  &__value {
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    display: block;
+    width: fit-content;
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}

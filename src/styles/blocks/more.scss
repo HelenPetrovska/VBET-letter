@@ -1,0 +1,93 @@
+.more {
+  margin-bottom: 85px;
+
+  &__title {
+    padding: 35px 0;
+    margin-bottom: 105px;
+    font-family: "TTFirsNeue";
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: url(../images/more.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include onLaptop {
+      font-size: 55px;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+  }
+
+  &__services-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  &__text {
+    @extend %text;
+  }
+}
+
+.benefits-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 25px;
+  margin-bottom: 70px;
+  list-style-type: none;
+
+  @include onTablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    justify-self: center;
+    max-width: 300px;
+  }
+
+  &__icon {
+    margin-bottom: 45px;
+  }
+
+  &__subtitle {
+    margin-bottom: 23px;
+    font-family: "TTFirsNeue";
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 131%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__dotes {
+    margin-bottom: 27px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 122%;
+    text-align: center;
+  }
+}
+
+.services-list {
+  padding-left: 20px;
+
+  &__item {
+    font-size: 18px;
+    line-height: 167%;
+
+    @include onLaptop {
+      padding-left: 0;
+      font-size: 24px;
+    }
+  }
+}

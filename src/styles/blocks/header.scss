@@ -1,5 +1,6 @@
 .header {
-  background-color: #15212C;
+  background-color: #15212c;
+  border-bottom: 2px solid #FFFFFF;
 
   &__container {
     padding: 0 23px;
@@ -9,16 +10,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    height: 50px;
+    height: 52px;
   }
 
   &__text {
     display: none;
-
     color: #fff;
+    font-size: 11px;
+    line-height: 120%;
 
-    @include onDesktop {
+    @include onLaptop {
       display: block;
     }
   }

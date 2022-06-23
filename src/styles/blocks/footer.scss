@@ -1,0 +1,54 @@
+.footer {
+  padding-bottom: 45px;
+
+  &__logo {
+    margin-bottom: 50px;
+    text-align: center;
+
+    @include onLaptop {
+      margin-bottom: 75px;
+    }
+  }
+
+  &__social {
+    margin-bottom: 35px;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    @include onTablet {
+      gap: 40px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 122%;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #D80F83;
+    }
+  }
+
+  &__license {
+    font-size: 10px;
+    line-height: 125%;
+    text-align: center;
+    opacity: 0.8;
+
+    @include onLaptop {
+      font-size: 12px;
+    }
+  }
+}
+
