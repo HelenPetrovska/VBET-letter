@@ -1,21 +1,7 @@
 .more {
   position: relative;
   margin-bottom: 85px;
-
-  &__circle {
-    position: absolute;
-    order: 1;
-    right: 0;
-    transform: translateY(-30%);
-
-    & img {
-      width: 170px;
-
-      @include onLaptop {
-        width: auto;
-      }
-    }
-  }
+  overflow: hidden;
 
   &__title {
     position: relative;

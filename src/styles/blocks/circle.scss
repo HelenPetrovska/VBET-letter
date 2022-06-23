@@ -1,0 +1,18 @@
+.circle {
+  position: relative;
+  
+  &__wrapper {
+    position: absolute;
+    order: 1;
+    right: 0;
+    transform: translateY(-30%);
+
+    & img {
+      width: 170px;
+
+      @include onLaptop {
+        width: auto;
+      }
+    }
+  }
+}

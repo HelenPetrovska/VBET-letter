@@ -1,7 +1,9 @@
 .bonuses {
   position: relative;
+  order: 1;
   padding-top: 80px;
   padding-bottom: 90px;
+  overflow: hidden;
 
   &__text {
     @extend %text;
@@ -62,6 +64,7 @@
     @include onDesktop {
       display: block;
       position: absolute;
+      order: 2;
       width: 808px;
       height: 897px;
       background: linear-gradient(141.55deg, #c5420a -3.79%, #740092 82.82%);
