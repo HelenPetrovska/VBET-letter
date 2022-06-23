@@ -2,7 +2,24 @@
   position: relative;
   margin-bottom: 85px;
 
+  &__circle {
+    position: absolute;
+    order: 1;
+    right: 0;
+    transform: translateY(-30%);
+
+    & img {
+      width: 170px;
+
+      @include onLaptop {
+        width: auto;
+      }
+    }
+  }
+
   &__title {
+    position: relative;
+    order: 2;
     padding: 35px 0;
     margin-bottom: 105px;
     font-family: "TTFirsNeue", sans-serif;
