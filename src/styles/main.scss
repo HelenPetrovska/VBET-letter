@@ -1,6 +1,5 @@
 @import "utils";
 @import "fonts";
-@import "typography";
 
 @import "./blocks/header.scss";
 @import "./blocks/main-screen.scss";
@@ -18,7 +17,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: normal;
   color: #fff;
   background-color: #0e001c;
@@ -44,7 +43,7 @@ button {
   color: #fff;
   font-size: 16px;
   background-color: transparent;
-  border: 3px solid #D80D83;
+  border: 3px solid #d80d83;
   border-radius: 40px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -56,7 +55,7 @@ button {
   }
 
   &:hover {
-    color: #D80D83;
+    color: #d80d83;
     border: 3px solid #fff;
   }
 }
@@ -70,7 +69,7 @@ button {
   text-decoration: none;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 1px;
@@ -84,15 +83,6 @@ button {
   display: flex;
   justify-content: center;
 
-    & span {
-    display: block;
-    background-color: #fff;
-
-    &:not(:last-of-type) {
-      margin-right: 10px;
-    }
-  }
-
   &--big {
     & span {
       width: 7px;
@@ -104,6 +94,15 @@ button {
     & span {
       width: 5px;
       height: 5px;
+    }
+  }
+
+  & span {
+    display: block;
+    background-color: #fff;
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
     }
   }
 }
@@ -144,35 +143,34 @@ button {
 
     &:first-child {
       background-image: url(../images/social-fb.png);
-
-      &:hover {
-        background-image: url(../images/social-fb-hover.png);
-      }
     }
 
     &:nth-child(2) {
       background-image: url(../images/social-tw.png);
-
-      &:hover {
-        background-image: url(../images/social-tw-hover.png);
-      }
     }
 
     &:nth-child(3) {
       background-image: url(../images/social-insta.png);
-
-      &:hover {
-        background-image: url(../images/social-insta-hover.png);
-      }
     }
 
     &:nth-child(4) {
       background-image: url(../images/social-youtube.png);
+    }
 
-      &:hover {
-        background-image: url(../images/social-youtube-hover.png);
-      }
+    &:first-child:hover {
+      background-image: url(../images/social-fb-hover.png);
+    }
+
+    &:nth-child(2):hover {
+      background-image: url(../images/social-tw-hover.png);
+    }
+
+    &:nth-child(3):hover {
+      background-image: url(../images/social-insta-hover.png);
+    }
+
+    &:nth-child(4):hover {
+      background-image: url(../images/social-youtube-hover.png);
     }
   }
 }
-

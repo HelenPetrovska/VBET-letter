@@ -1,10 +1,11 @@
 .more {
+  position: relative;
   margin-bottom: 85px;
 
   &__title {
     padding: 35px 0;
     margin-bottom: 105px;
-    font-family: "TTFirsNeue";
+    font-family: "TTFirsNeue", sans-serif;
     font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
@@ -30,6 +31,21 @@
 
   &__text {
     @extend %text;
+  }
+
+  &__gradient {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+      position: absolute;
+      width: 844px;
+      height: 937px;
+      background: linear-gradient(141.55deg, #c54d0a -3.79%, #7d1398 82.82%);
+      opacity: 0.7;
+      filter: blur(339.53px);
+      transform: translateX(100%) translateY(-80%) rotate(56deg);
+    }
   }
 }
 
@@ -59,7 +75,7 @@
 
   &__subtitle {
     margin-bottom: 23px;
-    font-family: "TTFirsNeue";
+    font-family: "TTFirsNeue", sans-serif;
     font-size: 26px;
     font-weight: 600;
     line-height: 131%;
